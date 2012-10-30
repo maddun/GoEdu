@@ -1,9 +1,10 @@
-package main
+package func main
 
-import "fmt"
+import (
+	"math"
+	"fmt"
+)
 
-// fibonacci is a function that returns
-// a function that returns an int.
 func fibonacci() func() int {
 }
 
