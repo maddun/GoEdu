@@ -1,11 +1,14 @@
-package func main
+package main
 
-import (
-	"math"
-	"fmt"
-)
+import "fmt"
 
 func fibonacci() func() int {
+	a := 0
+	b := 1
+	return func() int {
+		a, b = b, a+b
+		return b - a
+	}
 }
 
 func main() {
